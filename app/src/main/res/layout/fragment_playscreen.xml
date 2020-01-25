@@ -6,13 +6,13 @@
     android:layout_height="match_parent"
     android:background="@android:color/transparent"
     app:layoutDescription="@xml/scene_motion1"
-    app:motionDebug="SHOW_ALL">
+    >
 
     <View
         android:id="@+id/viewBackground"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:background="@android:color/white"
+        android:background="#F5F5F5"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -36,13 +36,16 @@
         android:id="@+id/eeee"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textSize="14sp"
         android:text="@string/sample_text"
 
         />
     <ScrollView
         android:id="@+id/ss"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="400dp"
         android:padding="12dp"
         >
         <LinearLayout
