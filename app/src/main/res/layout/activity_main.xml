@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/cardview_shadow_start_color"
-    app:layoutDescription="@xml/scene_motion2"
+    app:layoutDescription="@xml/scene_motion_main"
     >
 
     <FrameLayout
