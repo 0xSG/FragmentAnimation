@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/motionLayout"
@@ -10,17 +10,28 @@
     tools:showPaths="true">
 
 
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        >
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
             <ImageView
                 android:id="@+id/pin_image"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
+
+
                 android:background="#A71E1E"
                 android:scaleType="centerCrop"
-                tools:src="@tools:sample/avatars"
-                />
+                tools:src="@tools:sample/avatars" />
 
             <TextView
                 android:id="@+id/pin_text"
@@ -29,14 +40,23 @@
 
                 android:layout_marginStart="8dp"
 
-                app:layout_constraintLeft_toRightOf="@id/pin_image"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
 
                 android:text="@string/sample_text"
                 tools:text="@tools:sample/lorem/random"
-                android:maxLines="2"
 
                 />
+            <TextView
+            android:id="@+id/pin_stext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+            android:layout_marginStart="8dp"
+
+
+            android:text="@string/sample_text"
+            tools:text="@tools:sample/lorem/random"
+
+            />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.motion.widget.MotionLayout>

@@ -8,7 +8,7 @@
         motion:duration="1000">
         <OnSwipe
             motion:dragDirection="dragDown"
-            motion:targetId="@id/pin_image"
+            motion:targetId="@id/scrollView"
             motion:touchAnchorSide="bottom" />
 
     </Transition>
@@ -24,11 +24,10 @@
         <Constraint
             android:id="@+id/pin_text"
             android:layout_width="0dp"
-            android:layout_height="0dp"
+            android:layout_height="wrap_content"
 
             android:layout_marginLeft="8dp"
 
-            motion:layout_constraintBottom_toBottomOf="parent"
             motion:layout_constraintLeft_toRightOf="@id/pin_image"
             motion:layout_constraintRight_toRightOf="parent"
             motion:layout_constraintTop_toTopOf="parent">
