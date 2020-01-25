@@ -14,6 +14,9 @@ class MainActivity : AppCompatActivity() {
 
 
         supportFragmentManager.beginTransaction().replace(R.id.fragmentContainer,playscreen.newInstance("","")).commit()
+
+
+
     }
 
     override fun onBackPressed() {
