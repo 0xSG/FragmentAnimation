@@ -5,15 +5,23 @@
         motion:constraintSetStart="@+id/start"
         motion:constraintSetEnd="@+id/end"
         motion:duration="1000">
+        <OnClick
+            motion:clickAction="toggle"/>
     </Transition>
 
     <ConstraintSet android:id="@+id/start">
 
-
+        <Constraint
+            android:id="@+id/fragmentContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
     </ConstraintSet>
 
     <ConstraintSet android:id="@+id/end">
-
+        <Constraint
+        android:id="@+id/fragmentContainer"
+            android:layout_width="match_parent"
+        android:layout_height="460dp"/>
     </ConstraintSet>
 
 </MotionScene>

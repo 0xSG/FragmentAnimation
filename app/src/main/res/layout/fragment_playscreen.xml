@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/transparent"
+    android:maxHeight="460dp"
     app:layoutDescription="@xml/scene_motion1"
     >
 
@@ -17,8 +18,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@id/videoViewContainer"
-        app:layout_constraintTop_toTopOf="@id/videoViewContainer"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="@id/videoViewContainer" />
 
     <ImageView
         android:id="@+id/videoViewContainer"
@@ -45,7 +45,8 @@
     <ScrollView
         android:id="@+id/ss"
         android:layout_width="match_parent"
-        android:layout_height="400dp"
+        android:layout_height="wrap_content"
+        android:maxHeight="460dp"
         android:padding="12dp"
         >
         <LinearLayout
